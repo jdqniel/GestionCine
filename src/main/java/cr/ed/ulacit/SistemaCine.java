@@ -33,7 +33,7 @@ public class SistemaCine {
      * Inicializa los asientos del cine.
      */
     private void inicializarAsientos() {
-        for (int i = 1; i <= 50; i++) {
+        for (int i = 1; i <= 20; i++) {
             listaAsientos.agregarAsiento(new Asiento(i, true));
         }
     }
@@ -43,10 +43,10 @@ public class SistemaCine {
      */
     private void cargarDatosPrueba() {
         // Agregar clientes a la cola
-        colaClientes.encolar(new Cliente("Juan Pérez", "101", "1400"));
-        colaClientes.encolar(new Cliente("María García", "102", "1410"));
-        colaClientes.encolar(new Cliente("Carlos López", "103", "1415"));
-        colaClientes.encolar(new Cliente("Ana Martínez", "104", "1420"));
+        colaClientes.encolar(new Cliente("Daniel Sanchez", "101", "1400"));
+        colaClientes.encolar(new Cliente("Sofia Perez", "102", "1410"));
+        colaClientes.encolar(new Cliente("Juan López", "103", "1415"));
+        colaClientes.encolar(new Cliente("Diego Aguilera", "104", "1420"));
 
         // Agregar películas a la pila
         pilaPeliculas.apilar(new Pelicula("El Señor de los Anillos", "1500", 180, 1));
@@ -76,7 +76,7 @@ public class SistemaCine {
         System.out.println("Cliente atendido: " + clienteAtendido.getNombre());
 
         // Agregar nuevo cliente
-        Cliente nuevoCliente = new Cliente("Pedro Sánchez", "105", "1430");
+        Cliente nuevoCliente = new Cliente("Max Verstappen", "105", "1430");
         colaClientes.encolar(nuevoCliente);
         System.out.println("\nDespués de agregar un nuevo cliente:");
         colaClientes.mostrarCola();

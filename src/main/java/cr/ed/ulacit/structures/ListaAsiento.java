@@ -117,7 +117,7 @@ public class ListaAsiento {
         Nodo actual = cabeza;
         System.out.println("Estado de los asientos:");
         while (actual != null) {
-            System.out.println("Asiento " + actual.datos.getNumero() +
+            System.out.println("\uD83D\uDCBA" + actual.datos.getNumero() +
                     " - Disponible: " + actual.datos.estaDisponible());
             actual = actual.siguiente;
         }
