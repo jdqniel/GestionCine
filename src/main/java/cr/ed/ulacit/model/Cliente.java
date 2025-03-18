@@ -1,17 +1,26 @@
 package cr.ed.ulacit.model;
 
+/**
+ * Clase que representa un cliente del cine.
+ */
 public class Cliente {
-    private String name;
-    private String ticketNumber;
-    private String arrivalTime;
+    private String nombre;
+    private String numeroEntrada;
+    private String horaLlegada;
 
-    public Cliente(String name, String ticketNumber, String arrivalTime) {
-        this.name = name;
-        this.ticketNumber = ticketNumber;
-        this.arrivalTime = arrivalTime;
+    /**
+     * Constructor para crear un nuevo cliente.
+     * @param nombre Nombre del cliente
+     * @param numeroEntrada Número de entrada asignado
+     * @param horaLlegada Hora de llegada al cine
+     */
+    public Cliente(String nombre, String numeroEntrada, String horaLlegada) {
+        this.nombre = nombre;
+        this.numeroEntrada = numeroEntrada;
+        this.horaLlegada = horaLlegada;
     }
 
-    public String getName() { return name; }
-    public String getTicketNumber() { return ticketNumber; }
-    public String getArrivalTime() { return arrivalTime; }
+    public String getNombre() { return nombre; }
+    public String getNumeroEntrada() { return numeroEntrada; }
+    public String getHoraLlegada() { return horaLlegada; }
 }

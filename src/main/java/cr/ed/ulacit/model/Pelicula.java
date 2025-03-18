@@ -1,20 +1,30 @@
 package cr.ed.ulacit.model;
 
+/**
+ * Clase que representa una película en cartelera.
+ */
 public class Pelicula {
-    private String name;
-    private String time;
-    private int duration;
-    private int room;
+    private String nombre;
+    private String horario;
+    private int duracion;
+    private int sala;
 
-    public Pelicula(String name, String time, int duration, int room) {
-        this.name = name;
-        this.time = time;
-        this.duration = duration;
-        this.room = room;
+    /**
+     * Constructor para crear una nueva película.
+     * @param nombre Nombre de la película
+     * @param horario Horario de proyección
+     * @param duracion Duración en minutos
+     * @param sala Número de sala
+     */
+    public Pelicula(String nombre, String horario, int duracion, int sala) {
+        this.nombre = nombre;
+        this.horario = horario;
+        this.duracion = duracion;
+        this.sala = sala;
     }
 
-    public String getName() { return name; }
-    public String getTime() { return time; }
-    public int getDuration() { return duration; }
-    public int getRoom() { return room; }
+    public String getNombre() { return nombre; }
+    public String getHorario() { return horario; }
+    public int getDuracion() { return duracion; }
+    public int getSala() { return sala; }
 }
